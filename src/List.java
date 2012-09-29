@@ -9,6 +9,10 @@ class List{
 		head = n;
 	}
 
+	public Node getHead(){
+		return head;
+	}
+
 	public void add(Object o){
 		Node nHead = new Node(head, o);
 		head = nHead;
@@ -75,5 +79,14 @@ class List{
 			next = next.next();
 		}
 		return i;
+	}
+
+	public void linkf(List l){
+		l.getHead().append(head);
+		head = l.getHead();
+	}
+
+	public void linkb(List l){
+		getHead().append(l.getHead());
 	}
 }

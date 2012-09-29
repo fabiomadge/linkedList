@@ -11,5 +11,13 @@ public class Main
 		System.out.println(l);
 		l.append(5);
 		System.out.println(l);
+		List snd = new List();
+		snd.add(9);
+		snd.add(7);
+		snd.add(5);
+		System.out.println(snd);
+		l.linkf(snd);
+		System.out.println(l);
+		System.out.println(snd);
 	}
 }
